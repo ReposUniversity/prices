@@ -6,7 +6,7 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   const options = new DocumentBuilder()
     .setTitle('G&G')
-    .setDescription('The `Cois` API description')
+    .setDescription('The `G&G` API description')
     .setVersion('0.0.1')
     .addTag('cois')
     .build();
