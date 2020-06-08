@@ -1,5 +1,4 @@
 import { Injectable, HttpService } from '@nestjs/common';
-import { map } from 'rxjs/operators';
 import { PriceDTO } from './dto/price.dto';
 
 @Injectable()
@@ -8,10 +7,6 @@ export class PriceService {
     async getCodes() {
         try {
             const answer = await this.http.get('https://economia.awesomeapi.com.br/json/all').toPromise()
-            // map(response => {
-            //     console.log()
-            //     return response.data
-            // })
             const array = Object.entries(answer.data)
             return array.map(elem => {
                 return {
