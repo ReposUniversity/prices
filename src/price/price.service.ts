@@ -33,7 +33,7 @@ export class PriceService {
 
             const price: PriceDTO  = new PriceDTO();
             price.code = code;
-            price.ask = value * Number(currentCoin[0][1]["ask"]);
+            price.ask = value / Number(currentCoin[0][1]["ask"]);
             price.value = Number(currentCoin[0][1]["ask"]);
             return price;
         } catch (error) {
