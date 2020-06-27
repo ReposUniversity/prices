@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coins G&G</title>
+    <link rel='stylesheet' href='/assets/css/bare.min.css' />
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9" defer></script>
+    <script src="assets/js/index.js" defer></script>
+</head>
+<body>
+    <section txt="c">
+        <grid>
+                <input type="text" name="application" value="hbs" style="display: none;">
+                <div col="1/2">
+                    <card>
+                        <label for="usuario" txt="c">COIS G&G</label>
+                        <br>
+                        <label for="number" txt="l">Valor em reais</label>
+                        <input type="number" name="value" id="value" placeholder="a ser convertido, ex: 100" required>
+                        <label for="number" txt="l">Em</label>
+                        <select name="" id="select" required>
+                            <option value="" id="choice" disabled>Carregando...</option>
+                        </select>
+
+                        <br><br>
+    
+                        <button btn onclick="getValue()" type="submit">Converter</button>
+                    </card>
+                </div>
+        </grid>
+    </section>
+</body>
+</html>
